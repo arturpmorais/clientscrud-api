@@ -9,11 +9,11 @@ public class Client {
 
     public Client() {}
 
-    public Client(String name, String documentType, String document, String rg, Date registrationDate, ClientGroup clientGroup, Boolean active) {
+    public Client(String name, String documentType, String document1, String document2, Date registrationDate, ClientGroup clientGroup, Boolean active) {
         this.name = name;
         this.documentType = documentType;
-        this.document = document;
-        this.rg = rg;
+        this.document1 = document1;
+        this.document2 = document2;
         this.registrationDate = registrationDate;
         this.clientGroup = clientGroup;
         this.active = active;
@@ -30,10 +30,10 @@ public class Client {
     private String documentType;
 
     @Column(nullable = false)
-    private String document;
+    private String document1;
 
     @Column(nullable = false)
-    private String rg;
+    private String document2;
 
     @Column(nullable = false)
     private Date registrationDate;
@@ -69,20 +69,20 @@ public class Client {
         this.documentType = documentType;
     }
 
-    public String getDocument() {
-        return document;
+    public String getDocument1() {
+        return document1;
     }
 
-    public void setDocument(String document) {
-        this.document = document;
+    public void setDocument1(String document) {
+        this.document1 = document;
     }
 
-    public String getRg() {
-        return rg;
+    public String getDocument2() {
+        return document2;
     }
 
-    public void setRg(String rg) {
-        this.rg = rg;
+    public void setDocument2(String document2) {
+        this.document2 = document2;
     }
 
     public Date getRegistrationDate() {
