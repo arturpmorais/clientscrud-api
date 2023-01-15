@@ -7,6 +7,18 @@ import java.util.Date;
 @Entity
 public class Client {
 
+    public Client() {}
+
+    public Client(String name, String documentType, String document, String rg, Date registrationDate, ClientGroup clientGroup, Boolean active) {
+        this.name = name;
+        this.documentType = documentType;
+        this.document = document;
+        this.rg = rg;
+        this.registrationDate = registrationDate;
+        this.clientGroup = clientGroup;
+        this.active = active;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

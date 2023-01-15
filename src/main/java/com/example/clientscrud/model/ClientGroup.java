@@ -5,6 +5,13 @@ import jakarta.persistence.*;
 @Entity
 public class ClientGroup {
 
+    public ClientGroup() {}
+
+    public ClientGroup(String name, Boolean active) {
+        this.name = name;
+        this.active = active;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
