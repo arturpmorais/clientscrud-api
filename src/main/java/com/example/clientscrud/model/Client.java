@@ -29,7 +29,7 @@ public class Client {
     @Column(nullable = false)
     private String documentType;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String document1;
 
     @Column(nullable = false)
