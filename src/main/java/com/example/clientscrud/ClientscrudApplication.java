@@ -34,7 +34,8 @@ public class ClientscrudApplication implements RepositoryRestConfigurer {
 
 		corsConfiguration.setAllowCredentials(true);
 		corsConfiguration.setAllowedOrigins(Arrays.asList(
-		"http://localhost:4200"
+		"http://localhost:4200",
+		"https://mighty-chamber-60817.herokuapp.com/"
 		));
 		
 		corsConfiguration.setAllowedHeaders(Arrays.asList(
