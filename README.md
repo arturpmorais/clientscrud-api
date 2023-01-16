@@ -1,4 +1,6 @@
-# clientscrud-apiJava Spring API using JPA for database and entity management.
+# clientscrud-api
+
+Java Spring API using JPA for database and entity management.
 
 The API supports RESTful verbs and has only two entities: ClientGroup (/clientGroups) and Client (/clients). Check the classes for the schema.
 
